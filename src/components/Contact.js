@@ -12,10 +12,6 @@ const Contact = () => {
           <h2 className='section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block'>
             Contact me
           </h2>
-          <p className='subtitle'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-            labore nisium illum cupiditate reiciendis a numquam
-          </p>
         </div>
         <div
           className='flex flex-col lg:gap-x-8 lg:flex-row'
@@ -42,11 +38,11 @@ const Contact = () => {
           <form
             className='space-y-8 w-full max-w-[780px]'
           >
-            <div className='flex gap-8'>
+           {/*  <div className='flex gap-8'>
               <input className='input' type='text' placeholder='Your name' />
               <input className='input' type='email' placeholder='Your email' />
-            </div>
-            <input className='input' type='text' placeholder='Subject' />
+            </div> */}
+            <input className='input' type='text' placeholder='Your Name' />
             <textarea
               className='textarea'
               placeholder='Your message'

@@ -10,6 +10,8 @@ import {
   FiTag,
   FiMail,
   FiMapPin,
+  FiLinkedin,
+  FiFacebook
 } from 'react-icons/fi';
 
 
@@ -55,10 +57,10 @@ export const navigation = [
     name: 'services',
     href: 'services',
   },
-  {
+  /* {
     name: 'testimonials',
     href: 'testimonials',
-  },
+  }, */
   {
     name: 'contact',
     href: 'contact',
@@ -68,8 +70,8 @@ export const navigation = [
 // social
 export const social = [
   {
-    icon: <FiYoutube />,
-    href: '',
+    icon: <FiLinkedin />,
+    href: 'https://www.linkedin.com/in/elaheerazob/',
   },
   {
     icon: <FiInstagram />,
@@ -77,12 +79,13 @@ export const social = [
   },
   {
     icon: <FiGithub />,
-    href: '',
+    href: 'https://github.com/elaheerazob',
   },
   {
-    icon: <FiDribbble />,
-    href: '',
+    icon: <FiFacebook />,
+    href: 'https://www.facebook.com/elaheerazob',
   },
+  
 ];
 
 
@@ -179,15 +182,15 @@ export const services = [
     icon: <FiLayout />,
     name: 'Web Design',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.',
   },
   {
     icon: <FiSettings />,
     name: 'Web Development',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'Web development is the work involved in developing a website for the Internet or an intranet.Web development can range from developing a simple single static page of plain text to complex web applications.',
   },
-  {
+  /* {
     icon: <FiPenTool />,
     name: 'Branding',
     description:
@@ -198,7 +201,7 @@ export const services = [
     name: 'SEO',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-  },
+  }, */
 ];
 
 // testimonials
@@ -232,12 +235,12 @@ export const contact = [
     icon: <FiMail />,
     title: 'Have a question?',
     subtitle: 'I am here to help you.',
-    description: 'Email me at hello@youremail.com',
+    description: 'Email me at ridwanelahee282@gmail.com',
   },
   {
     icon: <FiMapPin />,
     title: 'Current Location',
-    subtitle: 'Bucharest, Romania',
+    subtitle: '68/5 Panthapath, Dhaka',
     description: 'Serving clients worldwide',
   },
 ];

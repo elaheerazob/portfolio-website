@@ -15,7 +15,7 @@ const Footer = () => {
             {social.map((item, index) => {
               const { href, icon } = item;
               return (
-                <a className='text-accent text-base' href={href} key={index}>
+                <a className='text-accent text-base' href={href} target='_blank' key={index}>
                   {icon}
                 </a>
               );
@@ -25,7 +25,7 @@ const Footer = () => {
             <img src={Logo} alt='' />
           </div>
           <p className='text-paragraph opacity-80 text-[15px]'>
-            &copy; 2022 Cristian Mihai. All rights reserved.
+            &copy; 2022 Ridwan Elhaee. All rights reserved.
           </p>
         </div>
       </div>
