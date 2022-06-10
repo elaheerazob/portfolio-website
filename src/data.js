@@ -98,6 +98,8 @@ export const projectsData = [
     category: 'This is a full-stack manufacturing website. This app users can create account,edit profile, give order with manage orders and review',
     live : 'https://car-manufacturer-b6451.web.app/',
     code : 'https://github.com/elaheerazob/car-manufacturer',
+    details : 
+    'This is a full-stack manufacturing website. This app users can create account,edit profile, give order with manage orders and review.  This app admin add new products, remove existing products,update Shipping Status, and make new admin to any user.  This project we used React JS, React Router, React Firebase Hook, Tailwind, Firebase, Node Js, MongoDB, Heroku.'
   },
   {
     id: '2',
@@ -105,7 +107,9 @@ export const projectsData = [
     name: 'Car-Bazar',
     category: 'Warehouse management website. Users need to log in via Email and Password or Google',
     live: 'https://car-bazar-20610.web.app/',
-    code: 'https://github.com/elaheerazob/car-bazar-'
+    code: 'https://github.com/elaheerazob/car-bazar-',
+    details : 
+      ''
   },
   {
     id: '3',
@@ -113,7 +117,8 @@ export const projectsData = [
     name: 'Wedding Photography',
     category: 'This is an Weeding Photographer Service Provider website. Users need to log in via Email and Password or Google',
     live: 'https://photographer-d0421.web.app/',
-    code: 'https://github.com/elaheerazob/Wedding-Photography'
+    code: 'https://github.com/elaheerazob/Wedding-Photography',
+    details : ''
   }
   /* {
     id: '4',

@@ -9,6 +9,10 @@ const Skills = () => {
       <div className='container mx-auto'>
         <div
           className='grid grid-cols-8 md:grid-flow-col'
+          data-aos="flip-down"
+          // data-aos-delay="500"
+          data-aos-duration="500"
+          data-aos-mirror="true"
         >
           {skills.map((skill, index) => {
             return (

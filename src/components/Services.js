@@ -12,7 +12,12 @@ const Services = () => {
             My Services
           </h2>
         </div>
-        <div className='grid lg:grid-cols-2 gap-8'>
+        <div className='grid lg:grid-cols-2 gap-8'
+        data-aos="flip-right"
+        // data-aos-delay="500"
+        data-aos-duration="500"
+        data-aos-mirror="true"
+        >
           {services.map((service, index) => {
             const { icon, name, description } = service;
             return (

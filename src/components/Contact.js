@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
 
 // import contact data
 import { contact } from '../data';
 
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_pi3mxja', 'template_1y8shok', form.current, 'ExS-ZND7m0ku8sTtU')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+      swal("Message Send!","success");
+  };
+
   return (
     <section className='section bg-primary' id='contact'>
       <div className='container mx-auto'>
@@ -15,6 +32,10 @@ const Contact = () => {
         </div>
         <div
           className='flex flex-col lg:gap-x-8 lg:flex-row'
+          data-aos="flip-left"
+        // data-aos-delay="500"
+        data-aos-duration="500"
+        data-aos-mirror="true"
         >
           <div
             className='flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2'
@@ -35,19 +56,19 @@ const Contact = () => {
               );
             })}
           </div>
-          <form
-            className='space-y-8 w-full max-w-[780px]'
-          >
+          <form ref={form} onSubmit={sendEmail} className='space-y-8 w-full max-w-[780px]'>
            {/*  <div className='flex gap-8'>
               <input className='input' type='text' placeholder='Your name' />
               <input className='input' type='email' placeholder='Your email' />
             </div> */}
-            <input className='input' type='text' placeholder='Your Name' />
+            <input  className='input' type='text' name="user_name" placeholder='Your Name' required />
             <textarea
               className='textarea'
               placeholder='Your message'
+              name="message"
+              required
             ></textarea>
-            <button className='btn btn-lg bg-accent hover:bg-secondary-hover'>
+            <button className='btn btn-md bg-accent hover:bg-secondary-hover'>
               Send message
             </button>
           </form>
